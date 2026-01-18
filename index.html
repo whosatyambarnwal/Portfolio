@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Barnwal | Laravel Developer & Cloud Engineer</title>
+    <meta name="description"
+        content="Satyam Barnwal is a Laravel Developer and Cloud Engineer specializing in scalable web applications, payment systems, and AWS infrastructure.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="container">
+            <a href="#" class="logo">Satyam<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#aws">Cloud</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I am</p>
+                <h1 class="glitch" data-text="Satyam Barnwal">Satyam Barnwal</h1>
+                <div class="subtitle-wrapper">
+                    <span class="subtitle-static">I am a </span>
+                    <span class="subtitle-dynamic"></span>
+                </div>
+                <p class="hero-description">
+                    I design, build, and optimize scalable web applications, payment systems,
+                    and cloud-powered platforms with a strong focus on performance, reliability,
+                    and clean architecture.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#" class="btn btn-outline">Download Resume <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="assets/images/profile.png" alt="Satyam Barnwal">
+                    <div class="glow-ring"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-content glass">
+                <p>
+                    Satyam Barnwal is a backend-focused <strong>Laravel developer</strong> with strong experience
+                    in building and maintaining real-world production systems.
+                </p>
+                <p>
+                    I specialize in payment architectures, cloud infrastructure, server
+                    optimization, and long-term project maintenance. My work often involves
+                    improving existing platforms — fixing complex bugs, refactoring legacy code,
+                    and enhancing performance, security, and scalability.
+                </p>
+                <p>
+                    With hands-on <strong>AWS</strong> and server management experience, I bridge the gap
+                    between application code and infrastructure, ensuring systems run smoothly
+                    under real traffic.
+                </p>
+                <p class="small-text">
+                    Graduated from Parul University (BCA), a well-recognized institution in India.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <h3>Laravel Developer</h3>
+                            <span class="company">Potenza Global Solutions</span>
+                            <span class="date">Nov 2023 – Present</span>
+                        </div>
+                        <p class="role-desc">
+                            Working on multiple live production projects involving Laravel-based
+                            applications, payment gateways, and cloud infrastructure.
+                        </p>
+                        <ul class="responsibilities">
+                            <li>Building and maintaining subscription and billing systems</li>
+                            <li>Stripe and Klarna integrations with webhook handling</li>
+                            <li>AWS server setup, optimization, and monitoring</li>
+                            <li>Bug fixing and feature enhancements in existing large codebases</li>
+                            <li>Performance tuning, caching, and SEO improvements</li>
+                            <li>Third-party service integrations and API management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <h3>Previous Contributions</h3>
+                            <span class="type">Contract / Project-based</span>
+                        </div>
+                        <p>
+                            Also contributed to several existing projects focused on debugging,
+                            stability improvements, and feature refinements rather than greenfield builds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <!-- Backend -->
+                <div class="skill-card glass reveal">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3>Backend & Frameworks</h3>
+                    <ul>
+                        <li>PHP / Laravel / CodeIgniter</li>
+                        <li>Node.js / TypeScript</li>
+                        <li>MySQL (Query Optimization)</li>
+                        <li>REST APIs</li>
+                        <li>Clean Architecture</li>
+                    </ul>
+                </div>
+                <!-- Cloud -->
+                <div class="skill-card glass reveal">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <h3>Cloud & Server</h3>
+                    <ul>
+                        <li>AWS (EC2, S3)</li>
+                        <li>Linux Server Management</li>
+                        <li>Cloudflare (DNS, Caching)</li>
+                        <li>Server Optimization</li>
+                    </ul>
+                </div>
+                <!-- Payments -->
+                <div class="skill-card glass reveal">
+                    <i class="fas fa-credit-card skill-icon"></i>
+                    <h3>Payments & Integrations</h3>
+                    <ul>
+                        <li>Stripe (Subscriptions, Webhooks)</li>
+                        <li>Klarna Payment Flows</li>
+                        <li>Firebase / Customer.io</li>
+                        <li>Third-party SDKs</li>
+                    </ul>
+                </div>
+                <!-- Tools -->
+                <div class="skill-card glass reveal">
+                    <i class="fas fa-tools skill-icon"></i>
+                    <h3>Tools & Frontend</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>HTML / CSS / JS</li>
+                        <li>Basic React.js</li>
+                        <li>Debugging & Performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass reveal">
+                    <div class="project-content">
+                        <h3>Project Reveal Platform</h3>
+                        <p>A custom platform designed to showcase and manage content dynamically. Worked on backend
+                            logic, performance improvements, and feature stability.</p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>Backend Logic</span>
+                            <span>Performance</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass reveal">
+                    <div class="project-content">
+                        <h3>UrbanFonts</h3>
+                        <p>A high-traffic font discovery platform. Contributed to backend optimizations, SEO
+                            improvements, caching strategies, bug fixing, and server performance.</p>
+                        <div class="tags">
+                            <span>High Traffic</span>
+                            <span>SEO</span>
+                            <span>Caching</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass reveal">
+                    <div class="project-content">
+                        <h3>Trivial Game Portal</h3>
+                        <p>A web-based trivia game platform involving dynamic content handling, user interaction logic,
+                            and backend stability improvements.</p>
+                        <div class="tags">
+                            <span>Game Logic</span>
+                            <span>Dynamic Content</span>
+                            <span>Stability</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Maintenance Card -->
+                <div class="project-card glass reveal special-card">
+                    <div class="project-content">
+                        <h3>Legacy & Maintenance</h3>
+                        <p>Maintained and improved multiple existing Laravel applications, focusing on bug fixes,
+                            performance tuning, payment reliability, and long-term maintainability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWS Section -->
+    <section id="aws" class="section">
+        <div class="container">
+            <div class="aws-wrapper glass reveal">
+                <div class="aws-content">
+                    <h2 class="section-title">AWS & <span class="highlight">Infrastructure</span></h2>
+                    <p class="aws-intro">Strong hands-on experience with AWS and server-side infrastructure.</p>
+                    <ul class="aws-list">
+                        <li><i class="fas fa-check-circle"></i> Deploying and managing Laravel applications on AWS</li>
+                        <li><i class="fas fa-check-circle"></i> Handling EC2 instances and storage with S3</li>
+                        <li><i class="fas fa-check-circle"></i> Configuring Cloudflare for performance and security</li>
+                        <li><i class="fas fa-check-circle"></i> Debugging server-level issues</li>
+                        <li><i class="fas fa-check-circle"></i> Ensuring application stability under real-world traffic
+                        </li>
+                    </ul>
+                </div>
+                <div class="aws-visual">
+                    <!-- Simple CSS/SVG representation of cloud/server -->
+                    <div class="server-rack">
+                        <div class="light blink-1"></div>
+                        <div class="light blink-2"></div>
+                        <div class="light blink-3"></div>
+                    </div>
+                    <i class="fab fa-aws bounce-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-wrapper glass reveal">
+                <div class="contact-text">
+                    <h3>Let’s build something reliable and scalable.</h3>
+                    <p>Open for opportunities in backend development and cloud engineering.</p>
+
+                    <div class="direct-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank" class="social-icon"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="mailto:email@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Form commented out for GitHub Pages
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div class="success-message" id="successMessage">Message Sent!</div>
+                </form> 
+                -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Satyam Barnwal. All rights reserved.</p>
+            <p class="footer-small">Designed & Built with <i class="fas fa-heart"></i> & Laravel Love</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
