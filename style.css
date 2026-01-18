@@ -987,10 +987,7 @@ footer {
     }
 
     .aws-list li {
-        justify-content: center;
-        /* Center align list items */
         text-align: left;
-        /* Keep text left aligned if it wraps */
     }
 
     .contact-wrapper {
@@ -1003,7 +1000,7 @@ footer {
     }
 
     .direct-contact {
-        align-items: center;
+        align-items: flex-start;
     }
 }
 
