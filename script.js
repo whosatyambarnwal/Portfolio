@@ -2,21 +2,30 @@
 const navbar = document.querySelector('.navbar');
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const contactForm = document.getElementById('contactForm');
+const navItems = document.querySelectorAll('.nav-links li a');
 
 // Navigation Toggle
 hamburger.addEventListener('click', () => {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-    if (navLinks.style.display === 'flex') {
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.position = 'absolute';
-        navLinks.style.top = '70px';
-        navLinks.style.left = '0';
-        navLinks.style.width = '100%';
-        navLinks.style.background = 'rgba(11, 2, 18, 0.95)';
-        navLinks.style.padding = '20px';
-        navLinks.style.borderBottom = '1px solid var(--glass-border)';
-    }
+    navLinks.classList.toggle('active');
+
+    // Animate hamburger icon
+    const icon = hamburger.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+});
+
+// Close mobile menu when a link is clicked
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+
+            // Reset hamburger icon
+            const icon = hamburger.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        }
+    });
 });
 
 // Navbar Blur on Scroll
